@@ -1,0 +1,139 @@
+.promo-ship {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__wrap {
+        background: #fff;
+        padding: 30px 0 35px;
+        border-radius: 4px;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        margin-bottom: 28px;
+    }
+    &__img {
+        max-width: 305px;
+        display: flex;
+        img {
+            margin: auto 0;
+        }
+    }
+    &__content {
+        max-width: 240px;
+    }
+    &__rate {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 10px;
+        img {
+            width: 28px;
+            height: 28px;
+        }
+        &.good {
+            img {
+                &:nth-child(5) {
+                    opacity: 0.3;
+                }
+            }
+        }
+        &.not-bad {
+            img {
+                &:nth-child(4),
+                &:nth-child(5) {
+                    opacity: 0.3;
+                }
+            }
+        }
+        &.bad {
+            img {
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    opacity: 0.3;
+                }
+            }
+        }
+        &.very-bad {
+            img {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+    &__desc {
+        font-size: 13px;
+        line-height: 17px;
+        margin: 5px 0 20px;
+    }
+    &__discount {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        span {
+            width: 25%;
+            display: block;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            &.was {
+                font-weight: 400;
+                color: #d9d9d9;
+                text-decoration-line: line-through;
+            }
+            &.discount {
+                background: #ff0000;
+                border-radius: 4px;
+                padding: 1px 0 2px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+    &__info {
+        p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            gap: 8px;
+            font-size: 13px;
+            line-height: 17px;
+            &:last-child {
+                span {
+                    font-weight: 700;
+                    color: #ff0000;
+                }
+            }
+            &:nth-child(2) {
+                margin: -5px 0;
+            }
+        }
+    }
+    &__btns {
+        max-width: 280px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__btn {
+        height: 60px;
+        &:nth-child(1) {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px dashed #131316;
+            border-radius: 4px;
+        }
+    }
+}

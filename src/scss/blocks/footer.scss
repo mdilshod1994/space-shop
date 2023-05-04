@@ -1,0 +1,35 @@
+.footer {
+    padding: 50px 0 0;
+    &__title {
+        text-align: center;
+        color: #fff;
+    }
+    &__socials {
+        max-width: max-content;
+        margin: 20px auto 30px;
+        display: flex;
+        gap: 20px;
+        a {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        font-size: 13px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &__tel,
+    &__mail {
+        color: #fff;
+    }
+}
